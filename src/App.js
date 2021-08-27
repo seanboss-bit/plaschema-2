@@ -1,24 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import "./New.css";
+import "./Sidebar.css";
+import Dashboard from "./components/Dashboard";
+import Sidebar from "./components/Sidebar";
+import { useState } from "react";
+import NavBar from "./components/NavBar";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import MailDashboard from "./components/MailDashboard";
 
 function App() {
+  const [sideNavDisplay, setSideNavDisplay] = useState(false);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router className="App">
+      <div className="close">
+        <NavBar
+          sideNavDisplay={sideNavDisplay}
+          setSideNavDisplay={setSideNavDisplay}
+        />
+      </div>
+      <Sidebar sideNavDisplay={sideNavDisplay} />
+      <Switch>
+        <Route exact path="/">
+          <Dashboard
+            sideNavDisplay={sideNavDisplay}
+            setSideNavDisplay={setSideNavDisplay}
+          />
+        </Route>
+        <Route exact path="/maildashboard">
+          <MailDashboard />
+        </Route>
+      </Switch>
+    </Router>
   );
 }
 
