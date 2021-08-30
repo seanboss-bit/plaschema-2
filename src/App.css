@@ -12,7 +12,6 @@ img {
   width: 83%;
   min-height: 100vh;
   background: #f2f3f8;
-  overflow-y: scroll;
   z-index: 1;
 }
 .dashboard-main#active {
@@ -41,7 +40,8 @@ img {
   width: 17%;
   transition: 250ms all linear;
 }
-.bar {
+.bar,
+.mailbars {
   background: none;
   width: 30px;
   border: none;
@@ -49,7 +49,8 @@ img {
   position: relative;
   outline: none;
 }
-.bar span {
+.bar span,
+.mailbars .mailspan {
   display: block;
   height: 2px;
   background-color: #fff;
@@ -57,7 +58,13 @@ img {
   position: relative;
   transition: 0.3s linear;
 }
-
+.mailbars {
+  background: #17b3a3;
+  padding: 10px;
+  width: 50px;
+  border-radius: 10px;
+  display: none;
+}
 .navbars {
   width: 85%;
   background-color: #3e8ef7;
@@ -66,6 +73,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  z-index: 3;
 }
 .navbars#active {
   width: 100%;
@@ -81,6 +89,7 @@ img {
 .user-menu {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 .user-menu .MuiSvgIcon-root {
   cursor: pointer;
@@ -91,15 +100,23 @@ img {
   border-radius: 50%;
   overflow: hidden;
   margin-left: 10px;
-  margin-right: 30px;
   cursor: pointer;
 }
-.notify {
+.notify,
+.msg {
   position: relative;
+  padding: 0 3px;
 }
-.notify span {
-  width: 9px;
-  height: 9px;
+.bell_icon,
+.msg .MuiSvgIcon-root {
+  font-size: 20px !important;
+}
+
+.notify span,
+.messages-nav span,
+.msg span {
+  width: 7px;
+  height: 7px;
   background-color: #ff4961;
   position: absolute;
   top: 0;
@@ -124,7 +141,7 @@ img {
   justify-content: space-between;
   align-items: center;
 }
-.top-body{
+.top-body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;

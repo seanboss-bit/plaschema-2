@@ -210,6 +210,8 @@ footer {
   background: #fff;
   padding: 10px 20px;
   border-top: 1px solid #e2e2e2;
+  position: relative;
+  z-index: 60;
 }
 footer p {
   margin: 0px !important;
@@ -230,6 +232,7 @@ footer p {
   display: none;
   overflow: hidden;
   box-shadow: 0 0 4px rgb(0 0 0 / 6%);
+  border-radius: 0px 0px 10px 10px;
 }
 .notification-data2 {
   width: 280px;
@@ -243,6 +246,7 @@ footer p {
   overflow: hidden;
   box-shadow: 0 0 4px rgb(0 0 0 / 6%);
   display: none;
+  border-radius: 0px 0px 10px 10px;
 }
 .notification-data#active {
   display: block;
@@ -278,6 +282,23 @@ footer p {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
+}
+.notification-header::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: #333;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.3;
+}
+.notification-header > * {
+  position: relative;
+}
+.new-notify .MuiSvgIcon-root {
+  font-size: 60px !important;
 }
 .notification-header p {
   margin-bottom: 0 !important;
@@ -289,6 +310,9 @@ footer p {
   background: #fff;
   height: 250px;
   overflow-y: scroll;
+}
+.notify-items::-webkit-scrollbar {
+  display: none;
 }
 .notify-items li {
   border-bottom: 0.3px solid #eee;
@@ -327,6 +351,10 @@ footer p {
   background: #ff4c52;
   text-align: center;
   padding: 18px 0px;
+  height: 100%;
+}
+.notify-footer:hover {
+  background-color: #d84348;
 }
 .notify-footer p {
   margin: 0 !important;
@@ -416,13 +444,31 @@ footer p {
   .table th {
     font-size: 15px;
   }
-  .dashboard-main#active {
+  .dashboard-main#active,
+  .mail-dash#active {
     width: 100%;
     transition: 250ms all linear;
   }
-  .dashboard-main#activenot {
+  .dashboard-main#activenot,
+  .mail-dash#activenot {
     width: 40%;
     transition: 250ms all linear;
+  }
+  .mail-dash#activenot {
+    width: 40% !important;
+    overflow: hidden;
+  }
+  .mail-dash#activenot .inbox .container {
+    padding: 0px !important;
+    margin: 0px !important;
+    padding-left: 10px !important;
+  }
+  .mail-dash#activenot .mailbars {
+    transition: 300ms all linear;
+    left: 47%;
+  }
+  .mail-dash#active .mailbars {
+    transition: 300ms all linear;
   }
   .close {
     display: block;
@@ -443,20 +489,25 @@ footer p {
     padding: 0 20px;
   }
   .sidebar-main,
-  .dashboard-main {
+  .dashboard-main,
+  .mail-dash {
     margin-top: 60px;
     z-index: 1;
   }
   .navbars {
     display: none;
   }
-  .nav-res .navbars {
+  .nav-res .navbars,
+  .nav-res2 .navbars {
     display: block;
+    width: 100vw;
   }
-  .nav-res .navbars#activenot {
-    width: 100%;
+  .nav-res .navbars#activenot,
+  .nav-res2 .navbars#activenot {
+    width: 100vw;
   }
-  .nav-res .navbars {
+  .nav-res .navbars,
+  .nav-res2 .navbars {
     display: flex;
     align-items: center;
     justify-content: space-between;

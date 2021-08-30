@@ -77,7 +77,11 @@
   transition: height ease 250ms;
   height: 15px;
 }
-.mail-dash{
+.display.showben{
+  transition: height ease 250ms;
+  height: 60px;
+}
+.mail-dash {
   position: absolute;
   top: 0;
   right: 0;
@@ -85,6 +89,14 @@
   min-height: 100vh;
   background: #f2f3f8;
   z-index: 1;
+}
+.mail-dash#active {
+  width: 100%;
+  transition: 250ms all linear;
+}
+.mail-dash#activenot {
+  width: 83%;
+  transition: 250ms all linear;
 }
 
 @media screen and (max-width: 700px) {
