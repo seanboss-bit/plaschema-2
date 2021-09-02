@@ -1,36 +1,23 @@
-import React, { useState } from "react";
+import React from "react";
 import Inbox from "./Inbox";
-import MailNav from "./MailNav";
 import MailSide from "./MailSide";
+import DashNav from "./DashNav";
 
 const MailDashboard = ({ setSideNavDisplay, sideNavDisplay }) => {
-  const [notifyToggle, setNotifyTooggle] = useState(false);
-  const [userToggle, setUserTooggle] = useState(false);
-  const [messageToggle, setMessageToggle] = useState(false);
-  const [taskToggle, SetTaskToggle] = useState(false);
-  const [setting, setSetting] = useState(false);
-  let [page, setPage] = useState(1);
- 
+  // const [notifyToggle, setNotifyTooggle] = useState(false);
+  // const [userToggle, setUserTooggle] = useState(false);
+  // const [messageToggle, setMessageToggle] = useState(false);
+  // const [taskToggle, SetTaskToggle] = useState(false);
+  // const [setting, setSetting] = useState(false);
+  // let [page, setPage] = useState(1);
+
   return (
     <div className="mail-dash" id={sideNavDisplay ? "active" : "activenot"}>
-      <MailNav
+      <MailSide />
+      <DashNav
         setSideNavDisplay={setSideNavDisplay}
         sideNavDisplay={sideNavDisplay}
-        notifyToggle={notifyToggle}
-        setNotifyTooggle={setNotifyTooggle}
-        userToggle={userToggle}
-        setUserTooggle={setUserTooggle}
-        messageToggle={messageToggle}
-        setMessageToggle={setMessageToggle}
-        taskToggle={taskToggle}
-        SetTaskToggle={SetTaskToggle}
-        setting={setting}
-        setSetting={setSetting}
-        page={page}
-        setPage={setPage}
       />
-      <MailSide />
-      
       <Inbox />
       <footer>
         <div className="container">

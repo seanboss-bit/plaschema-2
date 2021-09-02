@@ -8,35 +8,32 @@ import Dashboard from "./components/Dashboard";
 import Sidebar from "./components/Sidebar";
 import { useState } from "react";
 import NavBar from "./components/NavBar";
-import Resnav from "./components/Resnav";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import MailDashboard from "./components/MailDashboard";
+import Mailmainside from "./components/Mailmainside";
 
 function App() {
   const [sideNavDisplay, setSideNavDisplay] = useState(false);
+
   return (
     <Router className="App">
-      <Sidebar sideNavDisplay={sideNavDisplay} />
+      <div className="close">
+        <NavBar
+          sideNavDisplay={sideNavDisplay}
+          setSideNavDisplay={setSideNavDisplay}
+        />
+      </div>
+
       <Switch>
         <Route exact path="/">
-          <div className="close">
-            <NavBar
-              sideNavDisplay={sideNavDisplay}
-              setSideNavDisplay={setSideNavDisplay}
-            />
-          </div>
+          <Sidebar sideNavDisplay={sideNavDisplay} />
           <Dashboard
             sideNavDisplay={sideNavDisplay}
             setSideNavDisplay={setSideNavDisplay}
           />
         </Route>
         <Route exact path="/maildashboard">
-          <div className="close">
-            <Resnav
-              sideNavDisplay={sideNavDisplay}
-              setSideNavDisplay={setSideNavDisplay}
-            />
-          </div>
+          <Mailmainside sideNavDisplay={sideNavDisplay} />
           <MailDashboard
             sideNavDisplay={sideNavDisplay}
             setSideNavDisplay={setSideNavDisplay}

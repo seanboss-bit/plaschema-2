@@ -11,9 +11,9 @@ import ListAltIcon from "@material-ui/icons/ListAlt";
 import { useRef, useState } from "react";
 import { Link } from "react-router-dom";
 
-const Sidebar = ({sideNavDisplay}) => {
-  const [dashArr, setDashArr] = useState(true);
-  const [benOpen, setBenOpen] = useState(false);
+const Mailmainside = ({sideNavDisplay}) => {
+  const [dashArr, setDashArr] = useState(false);
+  const [benOpen, setBenOpen] = useState(true);
   const [subOpen, setSubOpen] = useState(false);
   const [encOpen, setEncOpen] = useState(false);
   const [facOpen, setFacOpen] = useState(false);
@@ -107,17 +107,8 @@ const Sidebar = ({sideNavDisplay}) => {
                   />
                 </a>
                 <ul
-                  className="display"
+                  className={benOpen ? "display showben" : "display"}
                   ref={topOpen}
-                  style={
-                    benOpen
-                      ? {
-                          height: topOpen.current.scrollHeight + "px",
-                        }
-                      : {
-                          height: "0px",
-                        }
-                  }
                 >
                   <li>
                     {/* eslint-disable-next-line */}
@@ -359,4 +350,4 @@ const Sidebar = ({sideNavDisplay}) => {
   );
 };
 
-export default Sidebar;
+export default Mailmainside;

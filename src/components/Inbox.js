@@ -106,7 +106,7 @@ const Inbox = () => {
                           <img src="/images/avatar/2.jpg" alt="#" />
                         </div>
                       </td>
-                      <td className="mail-name">Sean</td>
+                      <td className="mail-name">Jacob</td>
                       <td className="subject">
                         <b className="subject-titile">Lorem - </b>
                         Lorem ipsum dolor sit, amet consectetur adipisicing
@@ -116,7 +116,7 @@ const Inbox = () => {
                         <AttachFileIcon />
                       </td>
                       <td className="time">
-                        <p>4mins ago</p>
+                        <p>3 mins ago</p>
                       </td>
                     </tr>
                     <tr>
@@ -131,7 +131,7 @@ const Inbox = () => {
                           <img src="/images/avatar/2.jpg" alt="#" />
                         </div>
                       </td>
-                      <td className="mail-name">Sean</td>
+                      <td className="mail-name">Mason</td>
                       <td className="subject">
                         <b className="subject-titile">Lorem - </b>
                         Lorem ipsum dolor sit, amet consectetur adipisicing
@@ -141,7 +141,7 @@ const Inbox = () => {
                         <AttachFileIcon />
                       </td>
                       <td className="time">
-                        <p>4mins ago</p>
+                        <p>14 mins ago</p>
                       </td>
                     </tr>
                     <tr>
@@ -156,7 +156,7 @@ const Inbox = () => {
                           <img src="/images/avatar/2.jpg" alt="#" />
                         </div>
                       </td>
-                      <td className="mail-name">Sean</td>
+                      <td className="mail-name">William</td>
                       <td className="subject">
                         <b className="subject-titile">Lorem - </b>
                         Lorem ipsum dolor sit, amet consectetur adipisicing
@@ -166,7 +166,7 @@ const Inbox = () => {
                         <AttachFileIcon />
                       </td>
                       <td className="time">
-                        <p>4mins ago</p>
+                        <p>15 hours ago</p>
                       </td>
                     </tr>
                     <tr>
@@ -181,7 +181,7 @@ const Inbox = () => {
                           <img src="/images/avatar/2.jpg" alt="#" />
                         </div>
                       </td>
-                      <td className="mail-name">Sean</td>
+                      <td className="mail-name">Jayden</td>
                       <td className="subject">
                         <b className="subject-titile">Lorem - </b>
                         Lorem ipsum dolor sit, amet consectetur adipisicing
@@ -191,7 +191,7 @@ const Inbox = () => {
                         <AttachFileIcon />
                       </td>
                       <td className="time">
-                        <p>4mins ago</p>
+                        <p>25 hours ago</p>
                       </td>
                     </tr>
                     <tr>
@@ -206,7 +206,7 @@ const Inbox = () => {
                           <img src="/images/avatar/2.jpg" alt="#" />
                         </div>
                       </td>
-                      <td className="mail-name">Sean</td>
+                      <td className="mail-name">Noah</td>
                       <td className="subject">
                         <b className="subject-titile">Lorem - </b>
                         Lorem ipsum dolor sit, amet consectetur adipisicing
@@ -216,7 +216,7 @@ const Inbox = () => {
                         <AttachFileIcon />
                       </td>
                       <td className="time">
-                        <p>4mins ago</p>
+                        <p>3 mins ago</p>
                       </td>
                     </tr>
                     <tr>
@@ -231,7 +231,7 @@ const Inbox = () => {
                           <img src="/images/avatar/2.jpg" alt="#" />
                         </div>
                       </td>
-                      <td className="mail-name">Sean</td>
+                      <td className="mail-name">Ethan</td>
                       <td className="subject">
                         <b className="subject-titile">Lorem - </b>
                         Lorem ipsum dolor sit, amet consectetur adipisicing
@@ -241,7 +241,7 @@ const Inbox = () => {
                         <AttachFileIcon />
                       </td>
                       <td className="time">
-                        <p>4mins ago</p>
+                        <p>14 mins ago</p>
                       </td>
                     </tr>
                     <tr>
@@ -256,7 +256,7 @@ const Inbox = () => {
                           <img src="/images/avatar/2.jpg" alt="#" />
                         </div>
                       </td>
-                      <td className="mail-name">Sean</td>
+                      <td className="mail-name">Alexander</td>
                       <td className="subject">
                         <b className="subject-titile">Lorem - </b>
                         Lorem ipsum dolor sit, amet consectetur adipisicing
@@ -266,7 +266,7 @@ const Inbox = () => {
                         <AttachFileIcon />
                       </td>
                       <td className="time">
-                        <p>4mins ago</p>
+                        <p>15 hours ago</p>
                       </td>
                     </tr>
                     <tr>
@@ -281,7 +281,7 @@ const Inbox = () => {
                           <img src="/images/avatar/2.jpg" alt="#" />
                         </div>
                       </td>
-                      <td className="mail-name">Sean</td>
+                      <td className="mail-name">Aiden</td>
                       <td className="subject">
                         <b className="subject-titile">Lorem - </b>
                         Lorem ipsum dolor sit, amet consectetur adipisicing
@@ -291,7 +291,207 @@ const Inbox = () => {
                         <AttachFileIcon />
                       </td>
                       <td className="time">
-                        <p>4mins ago</p>
+                        <p>25 hours ago</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="checking">
+                        <input type="checkbox" />
+                      </td>
+                      <td>
+                        <StarIcon className="text-yellow" />
+                      </td>
+                      <td className="w-80">
+                        <div className="email-img">
+                          <img src="/images/avatar/2.jpg" alt="#" />
+                        </div>
+                      </td>
+                      <td className="mail-name">Daniel</td>
+                      <td className="subject">
+                        <b className="subject-titile">Lorem - </b>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit.
+                      </td>
+                      <td className="attach">
+                        <AttachFileIcon />
+                      </td>
+                      <td className="time">
+                        <p>3 mins ago</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="checking">
+                        <input type="checkbox" />
+                      </td>
+                      <td>
+                        <StarIcon className="text-yellow" />
+                      </td>
+                      <td className="w-80">
+                        <div className="email-img">
+                          <img src="/images/avatar/2.jpg" alt="#" />
+                        </div>
+                      </td>
+                      <td className="mail-name">Anthony</td>
+                      <td className="subject">
+                        <b className="subject-titile">Lorem - </b>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit.
+                      </td>
+                      <td className="attach">
+                        <AttachFileIcon />
+                      </td>
+                      <td className="time">
+                        <p>14 mins ago</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="checking">
+                        <input type="checkbox" />
+                      </td>
+                      <td>
+                        <StarIcon className="text-yellow" />
+                      </td>
+                      <td className="w-80">
+                        <div className="email-img">
+                          <img src="/images/avatar/2.jpg" alt="#" />
+                        </div>
+                      </td>
+                      <td className="mail-name">Mattew</td>
+                      <td className="subject">
+                        <b className="subject-titile">Lorem - </b>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit.
+                      </td>
+                      <td className="attach">
+                        <AttachFileIcon />
+                      </td>
+                      <td className="time">
+                        <p>15 hours ago</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="checking">
+                        <input type="checkbox" />
+                      </td>
+                      <td>
+                        <StarIcon className="text-yellow" />
+                      </td>
+                      <td className="w-80">
+                        <div className="email-img">
+                          <img src="/images/avatar/2.jpg" alt="#" />
+                        </div>
+                      </td>
+                      <td className="mail-name">Elijah</td>
+                      <td className="subject">
+                        <b className="subject-titile">Lorem - </b>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit.
+                      </td>
+                      <td className="attach">
+                        <AttachFileIcon />
+                      </td>
+                      <td className="time">
+                        <p>25 hours ago</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="checking">
+                        <input type="checkbox" />
+                      </td>
+                      <td>
+                        <StarIcon className="text-yellow" />
+                      </td>
+                      <td className="w-80">
+                        <div className="email-img">
+                          <img src="/images/avatar/2.jpg" alt="#" />
+                        </div>
+                      </td>
+                      <td className="mail-name">Liam</td>
+                      <td className="subject">
+                        <b className="subject-titile">Lorem - </b>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit.
+                      </td>
+                      <td className="attach">
+                        <AttachFileIcon />
+                      </td>
+                      <td className="time">
+                        <p>3 mins ago</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="checking">
+                        <input type="checkbox" />
+                      </td>
+                      <td>
+                        <StarIcon className="text-yellow" />
+                      </td>
+                      <td className="w-80">
+                        <div className="email-img">
+                          <img src="/images/avatar/2.jpg" alt="#" />
+                        </div>
+                      </td>
+                      <td className="mail-name">andrew</td>
+                      <td className="subject">
+                        <b className="subject-titile">Lorem - </b>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit.
+                      </td>
+                      <td className="attach">
+                        <AttachFileIcon />
+                      </td>
+                      <td className="time">
+                        <p>14 mins ago</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="checking">
+                        <input type="checkbox" />
+                      </td>
+                      <td>
+                        <StarIcon className="text-yellow" />
+                      </td>
+                      <td className="w-80">
+                        <div className="email-img">
+                          <img src="/images/avatar/2.jpg" alt="#" />
+                        </div>
+                      </td>
+                      <td className="mail-name">james</td>
+                      <td className="subject">
+                        <b className="subject-titile">Lorem - </b>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit.
+                      </td>
+                      <td className="attach">
+                        <AttachFileIcon />
+                      </td>
+                      <td className="time">
+                        <p>15 hours ago</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="checking">
+                        <input type="checkbox" />
+                      </td>
+                      <td>
+                        <StarIcon className="text-yellow" />
+                      </td>
+                      <td className="w-80">
+                        <div className="email-img">
+                          <img src="/images/avatar/2.jpg" alt="#" />
+                        </div>
+                      </td>
+                      <td className="mail-name">benjamin</td>
+                      <td className="subject">
+                        <b className="subject-titile">Lorem - </b>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit.
+                      </td>
+                      <td className="attach">
+                        <AttachFileIcon />
+                      </td>
+                      <td className="time">
+                        <p>25 hours ago</p>
                       </td>
                     </tr>
                   </tbody>

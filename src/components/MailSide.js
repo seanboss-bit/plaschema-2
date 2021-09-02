@@ -12,11 +12,10 @@ const MailSide = () => {
   return (
     <div className="mail-sidebar" id={show ? "active" : ""}>
       <div className="mailbars" onClick={() => setShow(!show)}>
-        <div className="mailspan"></div>
-
-        <div className="mailspan"></div>
-
-        <div className="mailspan"></div>
+        <div className="support">
+          <div className="mailspan"></div>
+          <div className="mailspan"></div>
+        </div>
       </div>
       <div className="compose-button">
         <div className="container">

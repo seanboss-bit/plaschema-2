@@ -421,6 +421,10 @@ footer p {
 .close {
   display: none;
 }
+.nav-res .navbars {
+  width: 100vw;
+  display: block;
+}
 @media screen and (max-width: 700px) {
   body {
     position: relative;
@@ -465,7 +469,7 @@ footer p {
   }
   .mail-dash#activenot .mailbars {
     transition: 300ms all linear;
-    left: 47%;
+    left: 53%;
   }
   .mail-dash#active .mailbars {
     transition: 300ms all linear;
@@ -499,11 +503,13 @@ footer p {
   }
   .nav-res .navbars,
   .nav-res2 .navbars {
-    display: block;
-    width: 100vw;
+    transition: width 250ms ease-in-out;
   }
   .nav-res .navbars#activenot,
   .nav-res2 .navbars#activenot {
+    width: 100vw;
+  }
+  .nav-res .navbars#active{
     width: 100vw;
   }
   .nav-res .navbars,

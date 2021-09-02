@@ -13,14 +13,15 @@ img {
   min-height: 100vh;
   background: #f2f3f8;
   z-index: 1;
+  transition: 250ms ease-in-out;
 }
 .dashboard-main#active {
   width: 100%;
-  transition: 250ms all linear;
+  transition: 250ms all ease-in-out;
 }
 .dashboard-main#activenot {
   width: 83%;
-  transition: 250ms all linear;
+  transition: 250ms ease-in-out;
 }
 .sidebar-main {
   position: fixed;
@@ -29,16 +30,17 @@ img {
   width: 83%;
   height: 100%;
   box-shadow: 1px 0px 20px rgb(0 0 0 / 8%);
-  z-index: 30;
+  z-index: 40;
+  transition: 250ms ease-in-out;
 }
 .sidebar-main#active {
   width: 0%;
-  transition: 250ms all linear;
+  transition: 250ms ease-in-out;
   z-index: 0;
 }
 .sidebar-main#activenot {
   width: 17%;
-  transition: 250ms all linear;
+  transition: 250ms ease-in-out;
 }
 .bar,
 .mailbars {
@@ -60,13 +62,14 @@ img {
 }
 .mailbars {
   background: #17b3a3;
-  padding: 10px;
-  width: 50px;
-  border-radius: 10px;
+  padding: 5px 10px;
+  width: 40px;
+  border-radius: 6px;
   display: none;
+  margin-left: 10px;
 }
 .navbars {
-  width: 85%;
+  width: 83%;
   background-color: #3e8ef7;
   padding: 15px 10px;
   position: fixed;
