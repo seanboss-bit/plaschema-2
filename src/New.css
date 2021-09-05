@@ -497,6 +497,13 @@ footer p {
   .mail-dash {
     margin-top: 60px;
     z-index: 1;
+    overflow-x: hidden;
+  }
+  .sidebar-main .container {
+    padding-left: 0px;
+  }
+  .sidebar-main{
+    padding-left: 15px !important;
   }
   .navbars {
     display: none;

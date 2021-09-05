@@ -12,9 +12,11 @@ import AutorenewIcon from "@material-ui/icons/Autorenew";
 import StarBorderIcon from "@material-ui/icons/StarBorder";
 import AttachFileIcon from "@material-ui/icons/AttachFile";
 import StarIcon from "@material-ui/icons/Star";
-import { useState } from "react";
+import { useState, useRef } from "react";
 const Inbox = () => {
   const [starred, setStarred] = useState(false);
+  const [modal, setModal] = useState(false);
+  const mode = useRef();
   return (
     <div className="inbox">
       <div className="container">
@@ -84,9 +86,12 @@ const Inbox = () => {
               <div className="container">
                 <table className="table">
                   <tbody>
-                    <tr>
-                      <td className="checking">
-                        <input type="checkbox" />
+                    <tr onClick={() => setModal(!modal)}>
+                      <td className="checking" onClick={() => setModal(false)}>
+                        <input
+                          type="checkbox"
+                          onClick={() => setModal(false)}
+                        />
                       </td>
                       <td>
                         {starred ? (
@@ -119,6 +124,45 @@ const Inbox = () => {
                         <p>3 mins ago</p>
                       </td>
                     </tr>
+                    <div
+                      className="modal-formail"
+                      ref={mode}
+                      style={
+                        modal
+                          ? {
+                              height: mode.current.scrollHeight + "px",
+                            }
+                          : {
+                              height: "0px",
+                            }
+                      }
+                    >
+                      <div className="container">
+                        <div className="from-who">
+                          <p>From: Jacob</p>
+                          <p>Tilte: Lorem</p>
+                        </div>
+                        <div className="from-body">
+                          <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Fugit unde reiciendis mollitia! Laudantium
+                            officia accusamus soluta architecto? Neque dolores,
+                            fugit optio, explicabo, dolor deleniti
+                            exercitationem laborum accusantium est odit unde.
+                            Lorem, ipsum dolor sit amet consectetur adipisicing
+                            elit. Sint, nam odio! Impedit, sint aliquid?
+                            Nesciunt, laborum blanditiis? Corporis accusamus
+                            eligendi vel sit, repudiandae voluptatem cupiditate
+                            molestiae optio quis tempora! Quo! Lorem ipsum dolor
+                            sit amet consectetur adipisicing elit. Non deserunt,
+                            eum illo eaque, a in ipsum laborum ea dolorum
+                            repellat consectetur ab culpa assumenda alias minus
+                            possimus totam recusandae voluptatibus.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
                     <tr>
                       <td className="checking">
                         <input type="checkbox" />

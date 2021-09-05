@@ -56,11 +56,34 @@
   margin-top: 25px;
   width: 100%;
 }
+
 .inboxes table tr {
   transition: 150ms ease-in-out;
   display: flex;
   align-items: center;
   display: table-row;
+  position: relative;
+  z-index: 2;
+}
+.modal-formail {
+  width: 790px;
+  background: #fff;
+  z-index: 3;
+  height: 0px;
+  position: absolute;
+  transition: height 250ms ease-in-out;
+  overflow: hidden;
+}
+.modal-formail > * {
+  position: absolute;
+}
+.from-who p {
+  margin-bottom: 15px !important;
+  font-size: 19px !important;
+  font-weight: 600;
+}
+.from-who p:first-child {
+  margin-bottom: 8px !important;
 }
 .inboxes table tr:hover {
   background: rgba(0, 0, 0, 0.09);
