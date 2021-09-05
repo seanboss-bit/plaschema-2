@@ -16,7 +16,7 @@ const DashGraph = () => {
                 // labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
                 datasets: [
                   {
-                    label: "Testing with dates",
+                    label: "Enrollments",
                     data: [
                       { x: "2021-09", y: 53 },
                       { x: "2021-09-02", y: 3 },
