@@ -11,7 +11,7 @@ import ListAltIcon from "@material-ui/icons/ListAlt";
 import { useRef, useState } from "react";
 import { Link } from "react-router-dom";
 
-const Mailmainside = ({sideNavDisplay}) => {
+const Mailmainside = ({ sideNavDisplay }) => {
   const [dashArr, setDashArr] = useState(false);
   const [benOpen, setBenOpen] = useState(true);
   const [subOpen, setSubOpen] = useState(false);
@@ -27,8 +27,8 @@ const Mailmainside = ({sideNavDisplay}) => {
         id={sideNavDisplay ? "active" : "activenot"}
       >
         <div className="container">
-          <div className="side-header">
-            <h5>Plashema-Admin</h5>
+          <div className="side-header text-center">
+            <h5>PLASCHEMA Admin</h5>
           </div>
           <ul className="tree">
             <li>

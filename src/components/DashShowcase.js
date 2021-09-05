@@ -2,6 +2,8 @@ import React from "react";
 import { Bar } from "react-chartjs-2";
 import AdjustIcon from "@material-ui/icons/Adjust";
 import TrendingUpIcon from "@material-ui/icons/TrendingUp";
+import "chartjs-adapter-date-fns";
+import "chartjs-plugin-zoom";
 
 const DashShowcase = () => {
   return (
@@ -86,8 +88,8 @@ const DashShowcase = () => {
                   datasets: [
                     {
                       type: "bar",
-                      label: "Bar Dataset",
-                      data: [12, 19, 3, 5, 2, 3],
+                      label: "Enrollment",
+                      data: [12, 23, 43, 34, 53, 12, 54, 12],
                       backgroundColor: [
                         "rgba(255, 99, 132, 0.2)",
                         "rgba(54, 162, 235, 0.2)",
@@ -108,8 +110,8 @@ const DashShowcase = () => {
                     },
                     {
                       type: "line",
-                      label: "Line Dataset",
-                      data: [0, 39, 13, 10, 20, 2],
+                      label: "Subscription",
+                      data: [12, 23, 43, 34, 53, 12, 54, 12],
                       borderWidth: 1,
                       tension: 0.4,
                       fill: true,
@@ -120,8 +122,8 @@ const DashShowcase = () => {
                     },
                     {
                       type: "line",
-                      label: "Block level",
-                      data: [12, 2, 20, 1, 2, 7],
+                      label: "Encounters",
+                      data: [9, 13, 21, 34, 63, 12, 67, 13],
                       backgroundColor: ["limegreen"],
                       borderColor: ["green"],
                       borderWidth: 1,
@@ -137,7 +139,6 @@ const DashShowcase = () => {
                     },
                   },
                 }}
-      
               />
             </div>
           </div>

@@ -33,11 +33,11 @@ const DashTable = () => {
                   </td>
                   <td>
                     {/* eslint-disable-next-line */}
-                    <a href="#">Ahmed Something</a>
+                    <a href="#">Ashmed Integrated</a>
                     <p>4 Bauchi Road, Jos</p>
                   </td>
                   <td>
-                    <h6>F.Something</h6>
+                    <h6>F.Kuramp</h6>
                     <p>08045374537</p>
                   </td>
                   <td>
@@ -66,12 +66,12 @@ const DashTable = () => {
                   </td>
                   <td>
                     {/* eslint-disable-next-line */}
-                    <a href="#">Ahmed Something</a>
-                    <p>4 Bauchi Road, Jos</p>
+                    <a href="#">Infinite X2</a>
+                    <p>50 Bauchi Road, Jos</p>
                   </td>
                   <td>
-                    <h6>F.Something</h6>
-                    <p>08045374537</p>
+                    <h6>Datot John</h6>
+                    <p>08032892566</p>
                   </td>
                   <td>
                     <div className="table-progress-head">
@@ -99,12 +99,12 @@ const DashTable = () => {
                   </td>
                   <td>
                     {/* eslint-disable-next-line */}
-                    <a href="#">Ahmed Something</a>
-                    <p>4 Bauchi Road, Jos</p>
+                    <a href="#">First Care</a>
+                    <p>Jos South LGA, Bukuru</p>
                   </td>
                   <td>
-                    <h6>F.Something</h6>
-                    <p>08045374537</p>
+                    <h6>F. Care</h6>
+                    <p>08036183940</p>
                   </td>
                   <td>
                     <div className="table-progress-head">
@@ -132,12 +132,12 @@ const DashTable = () => {
                   </td>
                   <td>
                     {/* eslint-disable-next-line */}
-                    <a href="#">Ahmed Something</a>
-                    <p>4 Bauchi Road, Jos</p>
+                    <a href="#">Precious Health</a>
+                    <p>102 Jang Road, Rayfield, Jos</p>
                   </td>
                   <td>
-                    <h6>F.Something</h6>
-                    <p>08045374537</p>
+                    <h6>J. Oruma</h6>
+                    <p>08065389925</p>
                   </td>
                   <td>
                     <div className="table-progress-head">

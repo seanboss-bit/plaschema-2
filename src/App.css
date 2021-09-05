@@ -70,7 +70,7 @@ img {
 }
 .navbars {
   width: 83%;
-  background-color: #3e8ef7;
+  background-color: #70b110;
   padding: 15px 10px;
   position: fixed;
   display: flex;
@@ -181,7 +181,7 @@ img {
 }
 .dash-content {
   display: grid;
-  grid-template-columns: 1.3fr 3fr;
+  grid-template-columns: 1.3fr minmax(0, 3fr);
   gap: 20px;
 }
 .numbers2 {

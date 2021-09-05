@@ -117,7 +117,7 @@ ul {
 .two-graph-content {
   margin-top: 30px;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 30px;
 }
 .lent {
@@ -509,7 +509,7 @@ footer p {
   .nav-res2 .navbars#activenot {
     width: 100vw;
   }
-  .nav-res .navbars#active{
+  .nav-res .navbars#active {
     width: 100vw;
   }
   .nav-res .navbars,
